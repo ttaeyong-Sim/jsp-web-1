@@ -1,0 +1,24 @@
+
+		header {
+			margin:0;
+		}
+		#logo {
+			width:32px;
+			height:32px;
+			margin-left:30px;
+		}
+		div,footer {
+			margin:0 30px;
+		}
+		.img-fluid {  /*부트스트랩 지원 화면 크기에 맞게 조절*/
+			/*border:1px solid #ccc;*/
+			width:100% !important;
+			height:500px!important;
+			object-fit: contain!important;
+			/*▲inputoutput 프로젝트에서 viewport_grid.html 실습자료 참고 */
+		}
+	
+		
+	
+
+		
