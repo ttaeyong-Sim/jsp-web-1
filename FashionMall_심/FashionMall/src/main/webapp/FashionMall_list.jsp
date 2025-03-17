@@ -1,8 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" 
-	import="java.util.ArrayList" import="model.DTO"
+	import="java.util.ArrayList" 
+	import="model.DTO"
  	import="model.DAO_SQL"
 %>
-<jsp:useBean id="productDAO_SQL" class="model.DAO_SQL" scope="session"></jsp:useBean>
+
 <html>
 <head>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -26,6 +27,7 @@
 		</div>
 	</div>
 		<%
+		DAO_SQL productDAO_SQL = DAO_SQL.getInstance();
  		ArrayList<DTO> dataInfo = productDAO_SQL.getALLData();
  		%>
 
@@ -43,7 +45,7 @@
 				<p>§size: <%=dto.getP_Size()%></p>
 				<p>§price: <%=dto.getPrice()%>원</p>		
 				<p>$상품현황: <span><%=dto.getStatus()%></span></p> <!--  색상변경하기 -->
- <a href="./FashionMall_P_detail.jsp?id=<%=dto.getProductId()%>" class="btn btn-secondary" role="button">제품 정보 &raquo;</a>
+ <a href="./FashionMall_P_detail.jsp?p_id=<%=dto.getProductId()%>" class="btn btn-secondary" role="button">제품 정보 &raquo;</a>
 			</div>
 		</div>
 			<%

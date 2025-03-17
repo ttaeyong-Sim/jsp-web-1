@@ -47,6 +47,7 @@
 				</p>
 			</div>
 		</div>
+		<a href="./FashionMall_list.jsp" class="btn btn-secondary">상품 목록&raquo;</a>
 	</div>
 	<%@ include file="FashionMall_footer.jsp"%>
 </body>

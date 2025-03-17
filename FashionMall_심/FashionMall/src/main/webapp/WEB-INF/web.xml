@@ -46,7 +46,7 @@
  	
  	<security-role>
  		<description></description>
- 		<role-name>FashionMall_admin</role-name>
+ 		<role-name>FashionMall</role-name>
  	</security-role>
  	
  	<security-constraint>
@@ -59,7 +59,7 @@
  
 	 	<auth-constraint>
 	 		<description>권한 관리자명</description>
-	 		<role-name>FashionMall_admin</role-name>
+	 		<role-name>FashionMall</role-name>
 	 	</auth-constraint>
 	 </security-constraint>
 	 
